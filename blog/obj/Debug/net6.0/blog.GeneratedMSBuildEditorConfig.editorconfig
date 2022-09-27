@@ -8,101 +8,101 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = blog
 build_property.RootNamespace = blog
-build_property.ProjectDir = E:\blog\blog\
+build_property.ProjectDir = E:\blog2\Blog2\blog\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\blog\blog
+build_property.MSBuildProjectDirectory = E:\blog2\Blog2\blog
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/blog/blog/Views/admeen/AllUsers.cshtml]
+[E:/blog2/Blog2/blog/Views/admeen/AllUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRtZWVuXEFsbFVzZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/admeen/searchd.cshtml]
+[E:/blog2/Blog2/blog/Views/admeen/searchd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRtZWVuXHNlYXJjaGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/admeen/ShowUserProfile.cshtml]
+[E:/blog2/Blog2/blog/Views/admeen/ShowUserProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRtZWVuXFNob3dVc2VyUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/Home/Index.cshtml]
+[E:/blog2/Blog2/blog/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/Home/Privacy.cshtml]
+[E:/blog2/Blog2/blog/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/Home/vier.cshtml]
+[E:/blog2/Blog2/blog/Views/Home/vier.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx2aWVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/newsController1/addNews.cshtml]
+[E:/blog2/Blog2/blog/Views/newsController1/addNews.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbmV3c0NvbnRyb2xsZXIxXGFkZE5ld3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/newsController1/allNews.cshtml]
+[E:/blog2/Blog2/blog/Views/newsController1/allNews.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbmV3c0NvbnRyb2xsZXIxXGFsbE5ld3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/newsController1/details.cshtml]
+[E:/blog2/Blog2/blog/Views/newsController1/details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbmV3c0NvbnRyb2xsZXIxXGRldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/newsController1/update.cshtml]
+[E:/blog2/Blog2/blog/Views/newsController1/update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbmV3c0NvbnRyb2xsZXIxXHVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/newsController1/yournews.cshtml]
+[E:/blog2/Blog2/blog/Views/newsController1/yournews.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbmV3c0NvbnRyb2xsZXIxXHlvdXJuZXdzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/Shared/Error.cshtml]
+[E:/blog2/Blog2/blog/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/Shared/_mainlayout.cshtml]
+[E:/blog2/Blog2/blog/Views/Shared/_mainlayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9tYWlubGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/blog2/Blog2/blog/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/user/about.cshtml]
+[E:/blog2/Blog2/blog/Views/user/about.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlclxhYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/user/complaints.cshtml]
+[E:/blog2/Blog2/blog/Views/user/complaints.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlclxjb21wbGFpbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/user/contact.cshtml]
+[E:/blog2/Blog2/blog/Views/user/contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlclxjb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/user/login.cshtml]
+[E:/blog2/Blog2/blog/Views/user/login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlclxsb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/user/profile.cshtml]
+[E:/blog2/Blog2/blog/Views/user/profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlclxwcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/user/register.cshtml]
+[E:/blog2/Blog2/blog/Views/user/register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlclxyZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/_ViewImports.cshtml]
+[E:/blog2/Blog2/blog/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/_ViewStart.cshtml]
+[E:/blog2/Blog2/blog/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/blog/blog/Views/Shared/_Layout.cshtml]
+[E:/blog2/Blog2/blog/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-9seuzognnd
