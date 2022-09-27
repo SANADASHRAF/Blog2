@@ -1,0 +1,32 @@
+﻿.submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 15px 50px;
+    border: none;
+    background-color: royalblue;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 90px;
+    width: 140px
+}
+.submitBtnn {
+    display: block;
+    margin-left: auto;
+    padding: 15px 50px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 90px;
+    width: 140px
+}
+    .submitBtn:hover {
+        background-color: purple;
+        transform: translateY(-2px);
+    }

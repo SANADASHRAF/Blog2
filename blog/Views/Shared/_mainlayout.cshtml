@@ -1,0 +1,201 @@
+﻿
+@{
+    Layout = null;
+    
+    int? customerid = Context.Session.GetInt32("customerId");
+    string? custemail = Context.Session.GetString("customeremail");
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Boocic</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="~/csss/bootstrap.min.css">
+    <!-- style css -->
+    <link href="c:\users\top\.nuget\packages\bootstrap\5.2.1\contentfiles\any\any\wwwroot\css\bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="~/csss/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="~/csss/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="~/images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="~/csss/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+
+
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="~/images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo"> <a href="index.html">newspaper</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <div class="menu-area">
+                            <div class="limit-box">
+                                <nav class="main-menu">
+                                    <ul class="menu-area-main">
+                                        @if (customerid == null )
+                                        {
+                                            <li class="active">@Html.ActionLink("Home", "allNews", "newsController1") </li>
+                                            <li> @Html.ActionLink("About", "about", "user") </li>
+                                            <li> @Html.ActionLink("login", "login", "user") </li>
+                                            <li> @Html.ActionLink("SignUp", "register", "user") </li>
+                                            
+                                        }
+                                        else if (custemail=="admeen@gmail.com")
+                                        {
+                                        <li> @Html.ActionLink("AllNews", "yournews", "newsController1") </li>
+                                        <li> @Html.ActionLink("AllUsers", "AllUsers", "admeen") </li>
+                                        <li> @Html.ActionLink("Complaints", "complaints", "user") </li>
+                                        <li> @Html.ActionLink("Profile", "profile", "user") </li>
+                                        <li> @Html.ActionLink("LogOut", "logout", "user") </li>
+                                        }
+                                        else
+                                        {
+                                        <li class="active">@Html.ActionLink("Home", "allNews", "newsController1") </li>
+                                         <li> @Html.ActionLink("Yours", "yournews", "newsController1") </li>
+                                        <li> @Html.ActionLink("Add", "addNews", "newsController1") </li>
+                                        <li> @Html.ActionLink("Contact", "contact", "user") </li>
+                                        <li> @Html.ActionLink("About", "about", "user") </li>
+                                         <li> @Html.ActionLink("complaints", "complaints", "user") </li>
+                                        <li> @Html.ActionLink("Profile", "profile", "user") </li>
+                                        <li> @Html.ActionLink("LogOut", "logout", "user") </li>
+                                        
+                                       
+                                        }
+                                      @*  <li class="mean-last"> <a href="#"><img src="~/images/search_icon.png" alt="#" /></a> </li>*@
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end header inner -->
+    </header>
+    <!-- end header -->
+
+
+    @RenderBody()
+
+
+    <!--  footer -->
+    <footr>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 col-sm-12 width">
+                        <div class="address">
+                            <h3>Address</h3>
+                            <i><img src="~/icon/3.png">Locations</i>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12 width">
+                        <div class="address">
+                            <h3>Menus</h3>
+                            <i><img src="~/icons/2.png">Locations</i>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12 width">
+                        <div class="address">
+                            <h3>Useful Linkes</h3>
+                            <i><img src="icon/1.png">Locations</i>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12 width">
+                        <div class="address">
+                            <h3>Social Media </h3>
+                            <ul class="contant_icon">
+                                <li><img src="~/icons/fb.png" alt="icon" /></li>
+                                <li><img src="~/icons/tw.png" alt="icon" /></li>
+                                <li><img src="~/icons/lin(2).png" alt="icon" /></li>
+                                <li><img src="~/icons/instagram.png" alt="icon" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 width">
+                        <div class="address">
+                            <h3>Newsletter </h3>
+                            <input class="form-control" placeholder="Enter your email" type="type" name="Enter your email">
+                            <button class="submit-btn">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a></p>
+            </div>
+        </div>
+    </footr>
+    <!-- end footer -->
+
+
+    <script src="~/jss/jquery.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/jss/bootstrap.bundle.min.js"></script>
+    <script src="~/jss/jquery-3.0.0.min.js"></script>
+    <script src="~/jss/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="~/jss/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="~/jss/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            });
+
+            $(".zoom").hover(function () {
+
+                $(this).addClass('transition');
+            }, function () {
+
+                $(this).removeClass('transition');
+            });
+        });
+
+    </script>
+
+
+
+    
+</body>
+</html>
+
+
+
+@await RenderSectionAsync("Scripts", required: false)

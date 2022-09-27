@@ -1,0 +1,31 @@
+﻿@model List<blog.Models.contactt>
+@{
+    ViewData["Title"] = "complaints";
+    Layout = "~/Views/Shared/_mainlayout.cshtml";
+}
+<link href="~/css/button.css" rel="stylesheet" />
+<h1 style="text-align:center;font-weight:bolder;margin-bottom:50px;margin-top:50px">your complaints</h1>
+<table class="table table-dark" style=" width:1500px;margin-left:300px">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Email</th>
+            <th scope="col" >Phone</th>
+            <th scope="col" style="text-align:center;">Message</th>
+            <th scope="col" style="text-align:center;">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var x in Model)
+        {
+        <tr>
+            <th scope="row">@x.Id</th>
+            <td>@x.email</td>
+            <td>@x.phone</td>
+            <td  style="margin-left:20px">@x.message</td>
+              <td style="text-align:center;">@Html.ActionLink("Delete","deletecomplaints",new{Id=x.Id},new{@class="submitBtnn"})</td>
+        </tr>
+        }
+    </tbody>
+</table>
+

@@ -1,0 +1,81 @@
+﻿@model List<blog.Models.news>
+@{
+    ViewData["Title"] = "yournews";
+    Layout = "~/Views/Shared/_mainlayout.cshtml";
+}
+
+@*///////////////////   search*@
+<link href="~/css/search.css" rel="stylesheet" />
+<form>
+    <div class="container" style="margin-top:-390px;margin-bottom:-450px;">
+
+        <div class="row height d-flex justify-content-center align-items-center">
+
+            <div class="col-md-8">
+
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="form-control" placeholder="Have a question? Ask Now" name="s">
+                    <button class="btn btn-primary" style="margin-top:-1px;">@Html.ActionLink("Search","searchd","admeen")</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</form>
+@*/////////////////////////////      *@
+
+
+
+
+
+<link href="~/css/button.css" rel="stylesheet" />
+<div id="blog" class="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="titlepage">
+                    <h2>WELLCOM</h2>
+
+                </div>
+            </div>
+        </div>
+        
+        @if(@ViewBag.data!=null)
+        {
+            <h1 style="font-weight:bolder;text-align:center;">@ViewBag.data</h1>
+        }
+       <div class="row">
+        @foreach(var x in Model)
+        {
+       
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="blog-box">
+                    <figure>
+                        <img style="height:600px" src="~/attachnews/@x.photo" alt="#" />
+                        <span>@x.date</span>
+                    </figure>
+                    <div class="travel">
+                        <span>Post  By :@x.publisher</span>
+
+                    </div>
+                    <h3>@x.pref</h3>
+                    <p> @x.description</p>
+                    <table>
+                    <tr>
+                                <td >@Html.ActionLink("Update","update",new{Id=x.Id},new{@class="submitBtn"})</td>
+                                <td>@Html.ActionLink("Delete","delete",new{Id=x.Id},new{@class="submitBtnn"})</td>
+                   </tr>
+                    </table>
+                    </div>
+            </div>
+        
+        }
+        </div>
+        <div>  <button style="margin-left:500px;width:90px;color:white;font-weight:bolder" class="card-btn">@Html.ActionLink("BACK", "allNews", "newsController1",new { @class = "btn btn-primary" }) <span>&rarr;</span></button></div>
+    </div>
+</div>
+
+
+

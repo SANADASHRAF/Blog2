@@ -1,0 +1,56 @@
+﻿@model blog.Models.contactt
+@{
+    ViewData["Title"] = "contact";
+    Layout = "~/Views/Shared/_mainlayout.cshtml";
+}
+
+<div id="contact" class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="titlepage">
+                    <h3>Contact Us</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 offset-md-3">
+                <div class="contact">
+
+                    <form method="post">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <input asp-for="Name" class="contactus" placeholder="Name" type="text name="name" />
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                            <div class="col-sm-12">
+                                <input asp-for="email" class="contactus" placeholder="Email" type="text name="email" />
+                                <span asp-validation-for="email" class="text-danger"></span>
+                            </div>
+                            <div class="col-sm-12">
+                                <input asp-for="phone" class="contactus" placeholder="Phone" type="text name="phone" />
+                                <span asp-validation-for="phone" class="text-danger"></span>
+                            </div>
+                            <div class="col-sm-12">
+                                <input asp-for="message" class="contactus" placeholder="Message" type="text name="message" />
+
+                                <span asp-validation-for="message" class="text-danger"></span>
+                            </div>
+                            <div class="col-sm-12">
+                               
+                                <input type="submit" class="send"  value="Send">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+}

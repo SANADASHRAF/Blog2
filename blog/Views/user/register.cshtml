@@ -1,0 +1,95 @@
+﻿@model blog.Models.customer
+@{
+    ViewData["Title"] = "register";
+    Layout = "~/Views/Shared/_mainlayout.cshtml";
+}
+
+
+
+<!DOCTYPE html>
+<head>
+    <link href="~/css/register.css" rel="stylesheet" />
+</head>
+
+
+<div class="signupFrm">
+
+    <form method="post" enctype="multipart/form-data" class="form">
+
+
+        <h1 class="title">Sign up</h1>
+
+        <div class="inputContainer">
+
+            <input asp-for="username" class="input" placeholder="a" />
+            <label asp-for="username" class="label"></label>
+            <span asp-validation-for="username" class="text-danger"></span>
+
+
+        </div>
+
+        <div class="inputContainer">
+
+            <input asp-for="email" class="input" placeholder="a" />
+            <label asp-for="email" class="label"></label>
+            <span asp-validation-for="email" class="text-danger"></span>
+
+        </div>
+
+
+        <div class="inputContainer">
+            <input asp-for="password" class="input" placeholder="a" />
+            <label asp-for="password" class="label"></label>
+            <span asp-validation-for="password" class="text-danger"></span>
+        </div>
+
+        <div class="inputContainer">
+            <input asp-for="ConfirmPassword" class="input" placeholder="a" />
+            <label asp-for="ConfirmPassword" class="label"></label>
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </div>
+        <div class="inputContainer">
+            <input asp-for="age" class="input" placeholder="a" />
+            <label asp-for="age" class="label"></label>
+            <span asp-validation-for="age" class="text-danger"></span>
+        </div>
+
+        <div class="inputContainer">
+            <input asp-for="adress" class="input" placeholder="a" />
+            <label asp-for="adress" class="label"></label>
+            <span asp-validation-for="adress" class="text-danger"></span>
+        </div>
+
+       
+
+        <div class="inputContainer">
+            <label asp-for="photo" class="label"></label>
+            <input type="file" asp-for="photo" class="input" name="photo" placeholder="a" />
+            <span asp-validation-for="photo" class="text-danger"></span>
+        </div>
+
+
+        <div style="text-align:center"> <input type="submit" class="submitBtn" value="Sign Up"></div>
+
+        <div class="small" style="text-align:center"> @Html.ActionLink("Have an account? Sign In!", "login", "user")</div>
+
+        @if (ViewBag.massege4 != null)
+        {
+        <div class="alert alert-dark" style="text-align:center;background-color:indianred">
+        @ViewBag.massege4
+        </div>
+        }
+
+    </form>
+
+</div>
+@section Scripts{
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+}
+
+
+
+

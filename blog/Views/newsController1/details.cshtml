@@ -1,0 +1,38 @@
+﻿@model blog.Models.news
+@{
+    ViewData["Title"] = "details";
+    Layout = "~/Views/Shared/_mainlayout.cshtml";
+}
+
+<div id="blog" class="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="titlepage">
+                    <h2>@Model.title</h2>
+                  
+                </div>
+            </div>
+        </div>
+       
+            <div class="row" style="margin-left:300px;width:900px">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="blog-box">
+                        <figure>
+                            <img style="width:1900px;height:400px" src="~/attachnews/@Model.photo" alt="#" />
+                            <span>@Model.date</span>
+                        </figure>
+                        <div class="travel">
+                            <span>Post  By :@Model.publisher</span>
+                            
+                        </div>
+                        <h3>@Model.pref</h3>
+                        <p> @Model.description</p>
+                    </div>
+                </div>
+            </div>
+        <div>  <button style="margin-left:500px;width:90px;color:white;font-weight:bolder" class="card-btn">@Html.ActionLink("BACK", "allNews", "newsController1",new { @class = "btn btn-primary" }) <span>&rarr;</span></button></div>
+    </div>
+</div>
+
+
